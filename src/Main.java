@@ -14,6 +14,6 @@ public class Main {
 		f.print(true);
 		Story story = new Story();
 		story.start();
-		story.End();
+		story.End(true);
 	}
 }

@@ -28,12 +28,12 @@ public class Story {
 	}
 	
 	//local class
-	public void End() {
+	public void End(boolean eNd) {
 		class EndStory{
-			private boolean end;
+			private boolean eNd;
 			public void Stop(boolean end) {
-				this.end = end;
-				if(end) {
+				this.eNd = end;
+				if(eNd) {
 					System.out.println("конец истории");
 				}else {
 					System.out.println("не конец истории");
@@ -41,7 +41,7 @@ public class Story {
 			}
 		}
 		EndStory e = new EndStory();
-		e.Stop(true);
+		e.Stop(eNd);
 	}
 	
 	
